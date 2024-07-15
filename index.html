@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Orden de la Jarretera</title>
+    <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="IMG/logo.jpg" alt="Home" width="80" height="80"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Miembros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login.html">Ingresar</a>
+                        <a class="dropdown-item" href="register.html">Registrarse</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn my-2 my-sm-0 btn-buscar" type="submit">Buscar</button>
+        </form>
+    </nav>
+
+    <!-- Carousel/Slide -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="IMG/slide1.jpg" class="d-block w-100" alt="The King">
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/slide2.jpg" class="d-block w-100" alt="The King">
+            </div>
+            <div class="carousel-item">
+                <img src="IMG/slide3.jpg" class="d-block w-100" alt="The Queen">
+            </div>
+            <!-- Sección para descripción del carousel -->
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Explora nuestra historia</h3>
+                <p>Descubre las tradiciones de la Orden de la Jarretera</p>
+            </div>
+        </div>
+        <!-- Flechas de navegación -->
+        <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+
+    <!-- Sección de historia -->
+    <div class="container mt-4">
+        <h2>Historia de la Orden</h2>
+        <p class="text-justify">La Orden de la Jarretera es la más antigua y más importante del Reino Unido.
+            Establecida
+            por el Rey Eduardo III de Inglaterra en 1348 para reconocer el valor y la lealtad, la Jarretera inglesa y
+            el Toisón de Oro español son las dos condecoraciones caballerescas más importantes y apreciadas de la
+            historia europea.</p>
+    </div>
+
+    <!-- Acordeón de Bootstrap para actividades -->
+    <div class="container mt-4">
+        <h2>Actividades</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-card" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            La Gran Ayuda
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        La Gran Colaboración ha sido creada por algunas de las organizaciones benéficas más conocidas de
+                        Gran Bretaña, desde los Scouts hasta el Servicio Voluntario Real, Rotary hasta el National
+                        Trust, y ha tenido lugar en el último día del Fin de Semana de la Coronación.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed btn-card" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            La Duquesa de Edimburgo celebra el Día de la Infancia de la NSPCC
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        En la Escuela Primaria Richard Atkins en Brixton, Su Alteza Real ayudó a celebrar los esfuerzos
+                        de recaudación de fondos de los estudiantes como parte del Día de la Infancia de la NSPCC.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video de Bootstrap -->
+    <div class="container mt-4">
+        <h2>Video Institucional</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <div class="embed-responsive-item" id="youtube-player"></div>
+            <!-- Script movido a una etiqueta script externa (mejora mantenimiento) -->
+            <script src="JS/youtube-script.js"></script>
+        </div>
+    </div>
+
+    <!-- Cards de Bootstrap -->
+    <div class="container mt-4">
+        <h2>Noticias</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img src="IMG/noticia1.jpg" class="card-img-top" alt="Su Majestad la Reina"
+                    title="Su Majestad la Reina">
+                <div class="card-body">
+                    <h5 class="card-title">Su Majestad la Reina</h5>
+                    <p class="card-text">La Reina ha gobernado por más tiempo que cualquier otro monarca en la historia
+                        británica, convirtiéndose en una figura muy querida y respetada en todo el mundo. Su
+                        extraordinario reinado la ha llevado a viajar más ampliamente que cualquier otro monarca,
+                        realizando muchas visitas históricas en el extranjero. Conocida por su sentido del deber y su
+                        dedicación a una vida de servicio, ha sido una figura emblemática importante para el Reino Unido
+                        y la Commonwealth durante épocas de enormes cambios sociales.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMG/noticia2.jpg" class="card-img-top" alt="Canada" title="Canada">
+                <div class="card-body">
+                    <h5 class="card-title">Canada</h5>
+                    <p class="card-text">Canadá ha sido una monarquía durante siglos, primero bajo los reyes de Francia
+                        en los siglos XVI, XVII y XVIII, luego bajo la Corona británica en los siglos XVIII y XIX, y
+                        ahora como un reino por derecho propio. Estas tierras habían sido ocupadas durante miles de años
+                        por los Pueblos Originarios, quienes, durante muchos siglos, han mantenido una relación duradera
+                        y muy cercana con la persona del Soberano y la Corona de Canadá.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMG/noticia3.jpg" class="card-img-top" alt="La Duquesa de Edimburgo"
+                    title="La Duquesa de Edimburgo">
+                <div class="card-body">
+                    <h5 class="card-title">La Duquesa de Edimburgo</h5>
+                    <p class="card-text">Como miembro de tiempo completo de la Familia Real, la Duquesa de Edimburgo
+                        divide su tiempo entre su labor en nombre del Rey en todo el Reino Unido y la Commonwealth, y el
+                        apoyo a un gran número de sus propias organizaciones benéficas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jumbotron de Bootstrap para la página de contacto -->
+    <div class="jumbotron jumbotron-fluid mt-4">
+        <div class="container">
+            <h1 class="display-4">Contacto</h1>
+            <p class="lead">Complete el formulario a continuación para ponerse en contacto con nosotros.</p>
+            <!-- Formulario de contacto (simulado) -->
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="4"
+                        placeholder="Escriba su mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>© 2023 Orden Caballeresca</p>
+    </footer>
+
+    <!-- Enlaces a los archivos de script de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

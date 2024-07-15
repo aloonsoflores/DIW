@@ -1,0 +1,108 @@
+:root {
+  --brand-blue: #233580;
+  --brand-blue-rgb: 35 53 128;
+  --brand-blue-darker: #182458;
+  --brand-blue-darker-rgb: 24 36 88;
+  --brand-blue-light-1: #2d3f8c;
+  --brand-blue-light-1-rgb: 45 63 140;
+  --brand-blue-light-2: #4b5995;
+  --brand-blue-light-2-rgb: 75 89 149;
+  --navy-blue: #2d3f8c;
+  --navy-blue-rgb: 45 63 140;
+  --blue: #3f74a1;
+  --blue-rgb: 63 116 161;
+  --blue-grey: #5b7084;
+  --blue-grey-rgb: 91 112 132;
+  --blue-grey-darker: #465666;
+  --blue-grey-darker-rgb: 70 86 102;
+  --black: #000;
+  --white: #fff;
+}
+
+/* Estilos generales */
+body {
+  background: url(https://www.royal.uk/themes/custom/kpp/dist/images/bg.png)
+    no-repeat center bottom fixed;
+  background-size: 100%;
+  border-color: var(--black);
+  color: var(--black);
+  padding-top: 100px;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Barra de navegación */
+.navbar-light .navbar-nav .nav-link {
+  color: var(--brand-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-inline .form-control {
+  border-color: var(--brand-blue);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-inline .btn-outline-success {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-card,
+.btn-buscar {
+  color: var(--white);
+  background-color: var(--brand-blue-light-2);
+  border-style: none;
+}
+
+.btn-card:hover,
+.btn-buscar:hover {
+  color: var(--white);
+  background-color: var(--brand-blue-light-1);
+}
+
+/* Estilos para los formularios de inicio de sesión y registro */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  color: var(--brand-blue);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-blue-darker);
+  border-color: var(--brand-blue-darker);
+}

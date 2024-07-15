@@ -1,0 +1,164 @@
+:root {
+  --brand-blue: #233580;
+  --brand-blue-rgb: 35 53 128;
+  --brand-blue-darker: #182458;
+  --brand-blue-darker-rgb: 24 36 88;
+  --brand-blue-light-1: #2d3f8c;
+  --brand-blue-light-1-rgb: 45 63 140;
+  --brand-blue-light-2: #4b5995;
+  --brand-blue-light-2-rgb: 75 89 149;
+  --navy-blue: #2d3f8c;
+  --navy-blue-rgb: 45 63 140;
+  --blue: #3f74a1;
+  --blue-rgb: 63 116 161;
+  --blue-grey: #5b7084;
+  --blue-grey-rgb: 91 112 132;
+  --blue-grey-darker: #465666;
+  --blue-grey-darker-rgb: 70 86 102;
+  --black: #000;
+  --white: #fff;
+}
+
+/* Estilos generales */
+body {
+  background: url(https://www.royal.uk/themes/custom/kpp/dist/images/bg.png)
+    no-repeat center bottom fixed;
+  background-size: 100%;
+  border-color: var(--black);
+  color: var(--black);
+  padding-top: 100px;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Barra de navegación */
+.navbar-light .navbar-nav .nav-link {
+  color: var(--brand-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-inline .form-control {
+  border-color: var(--brand-blue);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-inline .btn-outline-success {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Carousel/Slide */
+.carousel-caption {
+  background-color: var(--brand-blue-light-1);
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Sección de historia */
+.container h2 {
+  color: var(--brand-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.container p {
+  color: var(--blue-grey);
+  transition: color 0.3s ease-in-out;
+}
+
+/* Acordeón de Bootstrap para actividades */
+#accordion .card-header {
+  background-color: var(--brand-blue-light-2);
+  transition: background-color 0.5s ease-in-out;
+}
+
+#accordion .card-body {
+  color: var(--blue-grey);
+  transition: color 0.3s ease-in-out;
+}
+
+.btn-card,
+.btn-buscar {
+  color: var(--white);
+  background-color: var(--brand-blue-light-2);
+  border-style: none;
+}
+
+.btn-card:hover,
+.btn-buscar:hover {
+  color: var(--white);
+  background-color: var(--brand-blue-light-1);
+}
+
+/* Video de Bootstrap */
+.container h2#Video {
+  color: var(--brand-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+/* Cards de Bootstrap */
+.card-deck .card {
+  border-color: var(--brand-blue);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.card-deck .card:hover {
+  background-color: var(--brand-blue-light-2);
+  transition: background-color 0.5s ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-color: var(--brand-blue-light-1);
+  transition: 0.3s ease-in-out;
+}
+
+.card-deck .card-title,
+.card-deck .card-text {
+  color: var(--black);
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover .card-title,
+.card:hover .card-text {
+  color: var(--white);
+  transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Jumbotron de Bootstrap para la página de contacto */
+.jumbotron {
+  background-color: var(--brand-blue-light-2);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.jumbotron h1,
+.jumbotron p,
+.jumbotron label {
+  color: var(--white);
+  transition: color 0.3s ease-in-out;
+}
+
+.btn-submit {
+  color: var(--brand-blue-light-2);
+  background-color: var(--white);
+  transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+  color: var(--white);
+  background-color: var(--brand-blue-light-1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--brand-blue-light-2);
+  color: var(--white);
+  transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
